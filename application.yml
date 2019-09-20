@@ -1,0 +1,27 @@
+spring:
+  profiles:
+    active:
+      - dev
+
+
+---
+spring:    #开发环境
+  profiles: dev
+  application:
+    name: could-config-yhy-dev
+
+---
+spring:
+
+   profiles: test
+   application:
+     name: could-config-yhy-test
+
+
+
+
+
+
+
+
+
