@@ -1,0 +1,39 @@
+spring:
+  profiles:
+    active:
+      - dev
+
+
+---
+server:
+  port: 20202
+spring:    #开发环境
+  profiles: dev
+  application:
+    name: could-config-client-dev
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:20200/eureka/
+
+---
+
+server:
+  port: 20203
+spring:
+
+   profiles: test
+   application:
+     name: could-config-client
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:20200/eureka/
+
+
+
+
+
+
+
